@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Become Human</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <video playsinline autoplay muted loop poster="./bg.mp4" id="bgvid">
+      <source src="./loopy.mov" type="video/mp4" />
+    </video>
+    <div class="flex">
+      <header class="card">
+        <form class="form" action="POST">
+          <h3 class="form__heading">Ryan Roberts</h3>
+          <h4 class="form__subheading">Full Stack Engineer</h4>
+          <h4 class="form__triheading">Contact Me:</h4>
+
+          <div class="row">
+            <div class="input-field">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="name" type="text" class="validate" />
+              <label for="name">Full Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="text" class="validate" />
+              <label for="email">Email</label>
+            </div>
+          </div>
+
+          <div class="row mb-0">
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea id="message" class="materialize-textarea"></textarea>
+              <label for="message">Message</label>
+            </div>
+          </div>
+
+          <div class="row mb-2">
+            <button class="btn waves-effect waves-light" type="submit" name="action">
+              Send
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+
+          <div class="row">
+            <a
+              class="btn-floating btn-large waves-effect waves-light red"
+              href="https://www.linkedin.com/in/ryanroberts0/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              class="btn-floating btn-large waves-effect waves-light red"
+              href="https://github.com/Metaphysics0"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              class="btn-floating btn-large waves-effect waves-light red"
+              href="https://www.instagram.com/positiveryan/"
+              href="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </form>
+      </header>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
